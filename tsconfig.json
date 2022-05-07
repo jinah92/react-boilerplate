@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "lib": ["ES5", "ES2015", "ES6", "ES2019", "ES2020", "DOM"],
+    "outDir": "./dist",
+    "emitDecoratorMetadata": true, // 데코레이터 사용 관련
+    "experimentalDecorators": true, // 데코레이터 사용 관련
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "removeComments": true,
+    "noImplicitAny": false,
+    "pretty": true,
+    "noImplicitReturns": true
+    // "allowJs": true, // 기존 프로젝트가 js -> ts 로 마이그레이션할 경우
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
